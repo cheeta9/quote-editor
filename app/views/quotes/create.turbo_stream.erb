@@ -1,3 +1,5 @@
+<%# turbo_stream.prepend 'quotes', partial: 'quotes/quote', locals: quote: @quote %>
+<%# More shorter... %>
 <%= turbo_stream.prepend 'quotes', @quote %>
 <%= turbo_stream.update 'new_quote', '' %>
 
