@@ -2,4 +2,5 @@
 <%# More shorter... %>
 <%= turbo_stream.prepend 'quotes', @quote %>
 <%= turbo_stream.update 'new_quote', '' %>
+<%= render_turbo_stream_flash_messages %>
 
