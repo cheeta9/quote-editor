@@ -1,5 +1,6 @@
 class Quote < ApplicationRecord
   belongs_to :company
+  has_many :line_item_dates, dependent: :destroy
 
   # after_create_commit -> { broadcast_prepend_later_to 'quotes', partial: 'quotes/quote', locals: { quote: self }, target: 'quotes' }
   # More shorter...
